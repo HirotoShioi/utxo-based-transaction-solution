@@ -1,8 +1,8 @@
 module Dummy where
 
-import Types
-
 import qualified Data.Map as M
+
+import           Types    (Input (..), Output (..), Transaction (..), UTXOs)
 
 utxos :: UTXOs
 utxos = M.fromList [(input0, output0), (input0', output0')]

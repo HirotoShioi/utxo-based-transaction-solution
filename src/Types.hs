@@ -1,18 +1,17 @@
-module Types (
-    Transaction(..)
-  , Id
-  , Input(..)
-  , Output(..)
-  , Address
-  , Index
-  , UTXOs
-) where
-
+module Types 
+　　　　(
+ 　　   　Transaction(..)
+  　　　, Id
+  　　　, Input(..)
+  　　　, Output(..)
+  　　　, Address
+  　　　, Index
+  　　　, UTXOs
+　　　　) where
 
 import Data.Map (Map)
 
-data Transaction =
-  Transaction
+data Transaction =　Transaction
     { tId     :: Id
     , tInput  :: [Input]
     , tOutput :: [Output]
@@ -20,8 +19,7 @@ data Transaction =
 
 type Id = Int
 
-data Output =
-  Output
+data Output =　Output
     { oValue   :: Int
     , oAddress :: Address
     }
@@ -29,8 +27,7 @@ data Output =
 
 type Address = String
 
-data Input =
-  Input
+data Input =　Input
     { iPrevious :: Id
     , iIndex    :: Index
     }
